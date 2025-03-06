@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K&K Wedding & Registry</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(to bottom, #e6e6fa, #ffffff);
+            background-size: cover;
+            background-position: center;
+            background-image: url('background-image.jpg');
+            padding: 20px;
+            color: #4a148c;
+            margin: 0;
+            position: relative;
+        }
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.5); /* Light overlay for better readability */
+            z-index: -1;
+        }
+        .header {
+            height: 150px;
+            background-color: #e6e6fa;
+            background: transparent;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            color: #222222;
+            position: relative;
+            border: 3px solid #9575cd;
+        }
+        .photos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .photos img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 18px;
+            font-style: italic;
+            font-weight: bold;
+            color: #4a148c;
+        }
+        .registry-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #6a1b9a;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .fh5co-nav {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            padding: 15px 0;
+            margin-top: 30px;
+            background: transparent;
+        }
+        .fh5co-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .fh5co-nav ul li {
+            display: inline;
+        }
+        .fh5co-nav ul li a {
+            color: #4a148c;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        footer {
+            margin-top: 30px;
+            padding: 10px;
+            background-image: url('footer-image.jpg');
+            background-size: cover;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <nav class="fh5co-nav" role="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Story</a></li>
+            <li><a href="index.html">Gallery</a></li>
+            <li><a href="index.html">Contact</a></li>
+            <li><a href="registry.html">Registry</a></li>
+        </ul>
+    </nav>
+    
+    <div class="header"></div>
+    
+    <div class="container">
+        <h2>Our Wedding Registry</h2>
+        <p class="message">Your presence at our wedding is the greatest gift we could ask for. We feel incredibly lucky to celebrate this special moment with you. If you'd like to share in our joy with a gift, we've curated a registry of things we love. Your kindness and support mean the world to us!</p>
+        <a class="registry-link" href="https://registry.theknot.com/-april-2026-ca/70187649">Visit Our Registry</a>
+        <div class="photos">
+            <img src="photo1.jpg" alt="Our Photo 1">
+            <img src="photo2.jpg" alt="Our Photo 2">
+            <img src="photo3.jpg" alt="Our Photo 3">
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2026 K&K Wedding | Designed with Love</p>
+    </footer>
+</body>
+</html>
