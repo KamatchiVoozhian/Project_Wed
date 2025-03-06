@@ -52,6 +52,63 @@
 	<![endif]-->
 
 	</head>
+	<style>
+		.event-wrap {
+			position: relative;
+			color: white;
+			padding: 40px 20px;
+			border-radius: 10px;
+			overflow: hidden;
+			min-height: 250px; /* Adjust based on need */
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
+	
+		.event-wrap::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-size: cover;
+			background-position: center;
+			filter: brightness(50%); /* Adjust transparency */
+			z-index: 0;
+		}
+	
+		.event-wrap h3,
+		.event-col,
+		.event-wrap p {
+			position: relative;
+			z-index: 1;
+		}
+	
+		/* Specific Backgrounds for Each Event */
+		.tying-knot::before {
+			background-image: url('temple.jpg');
+		}
+	
+		.exchanging-rings::before {
+			background-image: url('rings.jpg');
+		}
+	
+		.party-time::before {
+			background-image: url('champagne.jpg');
+		}
+	
+		/* Responsive adjustments */
+		@media (max-width: 768px) {
+			.event-wrap {
+				min-height: 200px; /* Reduce height on smaller screens */
+				padding: 30px 15px;
+			}
+		}
+	</style>
+
 	<body>
 		
 	<div class="fh5co-loader"></div>
@@ -151,51 +208,45 @@
 					<div class="display-tc">
 						<div class="col-md-10 col-md-offset-1">
 							<div class="col-md-6 col-sm-6 text-center">
-								<div class="event-wrap animate-box">
-									<h3>Indian Ceremony</h3>
+								<div class="event-wrap tying-knot animate-box">
+									<h3>Tying the Knot</h3>
 									<div class="event-col">
 										<i class="icon-clock"></i>
-										<span>11:00 AM</span>
-										<span>12:00 PM</span>
+										<span>1:00 PM</span>
+										<span>2:00 PM</span>
 									</div>
 									<div class="event-col">
 										<i class="icon-calendar"></i>
-										<span></span>
-										<span></span>
+										<span>April 11, 2026</span>
 									</div>
-									<p></p>
 								</div>
 							</div>
 							<div class="col-md-6 col-sm-6 text-center">
-								<div class="event-wrap animate-box">
-									<h3>American Ceremony</h3>
+								<div class="event-wrap exchanging-rings animate-box">
+									<h3>Exchanging the Rings</h3>
 									<div class="event-col">
 										<i class="icon-clock"></i>
 										<span>4:00 PM</span>
-										<span>6:00 PM</span>
+										<span>5:00 PM</span>
 									</div>
 									<div class="event-col">
 										<i class="icon-calendar"></i>
-										<span></span>
-										<span></span>
+										<span>April 11, 2026</span>
 									</div>
-									<p></p>
 								</div>
 							</div>
 							<div class="col-md-6 col-sm-6 text-center">
-								<div class="event-wrap animate-box">
-									<h3>Wedding Party</h3>
+								<div class="event-wrap party-time animate-box">
+									<h3>Party Time</h3>
 									<div class="event-col">
 										<i class="icon-clock"></i>
-										<span>7:00 PM</span>
-										<span>12:00 AM</span>
+										<span>5:00 PM</span>
+										<span>6:00 AM</span>
 									</div>
 									<div class="event-col">
 										<i class="icon-calendar"></i>
-										<span></span>
-										<span></span>
+										<span>March 15, 2025</span>
 									</div>
-									<p></p>
 								</div>
 							</div>
 						</div>
@@ -204,7 +255,7 @@
 			</div>
 		</div>
 	</div>
-
+	
 	<div id="fh5co-couple-story">
 		<div class="container">
 			<div class="row">
@@ -344,7 +395,7 @@
 	<script src="js/main.js"></script>
 
 	<script>
-    var d = new Date(new Date().getTime() + 1070 * 120 * 120 * 2000);
+    var d = new Date(new Date("2026-04-11T12:00:00"));
 
     // default example
     simplyCountdown('.simply-countdown-one', {
