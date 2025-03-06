@@ -108,6 +108,55 @@
             background-size: cover;
             color: #ffffff;
         }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            .photos {
+                grid-template-columns: 1fr 1fr;
+            }
+            .photos img {
+                height: 100px;
+            }
+            .fh5co-nav ul {
+                gap: 15px;
+            }
+            .fh5co-nav ul li a {
+                font-size: 16px;
+            }
+            .message {
+                font-size: 16px;
+            }
+            .registry-link {
+                padding: 8px 12px;
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .fh5co-nav ul {
+                flex-direction: column;
+            }
+            .fh5co-nav ul li a {
+                font-size: 14px;
+                padding: 10px 0;
+            }
+            .photos {
+                grid-template-columns: 1fr;
+            }
+            .photos img {
+                height: 80px;
+            }
+            .message {
+                font-size: 14px;
+            }
+            .registry-link {
+                padding: 6px 10px;
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 <body>
