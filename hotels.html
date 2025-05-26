@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hotels</title>
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+    <style>
+        .hotels-title {
+            font-family: 'Sacramento', cursive;
+            font-size: rem;
+            font-size: 8rem;
+            color: #333;
+            margin-top: 50px;
+        }
+        .hotels-subtitle {
+            font-family: 'Work Sans', sans-serif;
+            font-size: 2.8rem;
+            letter-spacing: -2px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        @media screen and (max-width: 768px) {
+            .hotels-title {
+                font-size: 6rem;
+            }
+            .hotels-subtitle {
+                font-size: 2rem;
+                text-align: justify;
+            }
+        }
+
+        .go-home-btn {
+            display: inline-flex;
+            align-items: center;
+            background: #8e44ad;
+            color: #fff;
+            font-size: 1.4rem;
+            font-family: 'Work Sans', sans-serif;
+            padding: 0.8em 2.2em;
+            border: none;
+            border-radius: 2em;
+            box-shadow: 0 6px 24px rgba(142,68,173,0.18), 0 1.5px 4px rgba(0,0,0,0.08);
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.2s, box-shadow 0.2s;
+            margin-top: 32px;
+            margin-bottom: 32px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        .go-home-btn:hover, .go-home-btn:focus {
+            background: #6c3483;
+            box-shadow: 0 8px 32px rgba(142,68,173,0.25), 0 2px 8px rgba(0,0,0,0.10);
+            text-decoration: none;
+            color: #fff;
+        }
+        .go-home-btn .arrow {
+            display: inline-block;
+            margin-right: 0.7em;
+            font-size: 1.5em;
+            transition: transform 0.3s cubic-bezier(.68,-0.55,.27,1.55);
+            animation: arrow-bounce 1s infinite alternate;
+        }
+        @keyframes arrow-bounce {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-8px); }
+        }
+        @media (max-width: 768px) {
+            .go-home-btn {
+                font-size: 1.1rem;
+                padding: 0.7em 1.5em;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            .go-home-btn .arrow {
+                font-size: 1.2em;
+            }
+        }
+        .custom-card {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(44, 62, 80, 0.08);
+            padding: 2.5rem 2rem 2rem 2rem;
+            margin-bottom: 2.5rem;
+            transition: box-shadow 0.2s;
+        }
+        .custom-card:hover {
+            box-shadow: 0 8px 32px rgba(44, 62, 80, 0.15);
+        }
+        .card-heading {
+            font-family: 'Work Sans', sans-serif;
+            font-size: 2.6rem;
+            font-weight: 700;
+            color: #512e5f;
+            margin-bottom: 1.2rem;
+            letter-spacing: -1px;
+        }
+        .card-image img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 1.2rem;
+            box-shadow: 0 2px 12px rgba(44, 62, 80, 0.07);
+        }
+        .card-address {
+            font-family: 'Work Sans', sans-serif;
+            font-size: 2rem;
+            color: #444;
+            margin-bottom: 1.2rem;
+            line-height: 1.6;
+            letter-spacing: 0.01em;
+        }
+        .card-button-book {
+            margin-top: 1.2rem;
+        }
+        .card-button-book a {
+            display: inline-block;
+            background: #8e44ad;
+            color: #fff;
+            font-size: 1.5rem;
+            font-family: 'Work Sans', sans-serif;
+            padding: 0.6em 1.8em;
+            border: none;
+            border-radius: 2em;
+            box-shadow: 0 2px 8px rgba(142,68,173,0.12);
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.2s, box-shadow 0.2s;
+        }
+        .card-button-book a:hover, .card-button-book a:focus {
+            background: #6c3483;
+            box-shadow: 0 4px 16px rgba(142,68,173,0.18);
+            color: #fff;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            .custom-card {
+                padding: 1.2rem 0.8rem 1.2rem 0.8rem;
+            }
+            .card-heading {
+                font-size: 1.7rem;
+            }
+            .card-image img {
+                height: 160px;
+            }
+            .card-address {
+                font-size: 1.2rem;
+            }
+            .card-button-book a {
+                font-size: 1rem;
+                padding: 0.5em 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="d-flex justify-content-center my-5">
+            <a href="index.html" class="go-home-btn">
+                <span class="arrow">&#8592;</span> Go Home
+            </a>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="hotels-title">Hotels</h1>
+                <p class="hotels-subtitle">Welcome to our hotels page! Here you can find a variety of accommodations to suit your needs.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                <div class="custom-card">
+                    <div class="card-heading">
+                        <p>Miners camp</p>
+                    </div>
+                    <div class="card-image">
+                        <img src="images/miners_camp_1.jpg" alt="Miners Camp">
+                    </div>
+                    <div class="card-address">
+                        <p><b>Address: </b>24381 Foresthill Rd, Foresthill, CA 95631</p>
+                    </div>
+                    <div class="card-button-book">
+                        <a href="https://hotels.cloudbeds.com/reservation/g5NluW?allotment_block_code=b571794#checkin=2026-04-11&checkout=2026-04-12" target="_blank">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                <div class="custom-card">
+                    <div class="card-heading">
+                        <p>Hotel Sierra Vista, Springhill Suites</p>
+                    </div>
+                    <div class="card-image">
+                        <img src="images/hotel_sierra_vista.png" alt="Miners Camp">
+                    </div>
+                    <div class="card-address">
+                        <p><b>Address: </b>13535 Bowman Rd, Auburn, CA 95603</p>
+                    </div>
+                    <div class="card-button-book">
+                        <a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1746727361893&key=GRP&guestreslink2=true&app=resvlink" target="_blank">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="fh5co-footer" role="contentinfo">
+		<div class="container">
+
+			<div class="row copyright">
+				<div class="col-md-12 text-center">
+					<p>
+						<small class="block">&copy; 2026 K&K Wedding | Designed with Love</small> 
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+</body>
+</html>
