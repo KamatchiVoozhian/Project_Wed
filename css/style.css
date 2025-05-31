@@ -940,7 +940,7 @@ form label {
 .simply-countdown > .simply-section {
   /* coutndown blocks */
   display: inline-block;
-  width: 100px;
+  width: 90px;
   height: 100px;
   background: rgba(102, 59, 182, 0.8);
   margin: 0 4px;
@@ -1336,7 +1336,6 @@ form label {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
 }
 #fh5co-started .fh5co-heading h2 {
   color: #fff;
@@ -1841,3 +1840,17 @@ form label {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.custom-card {
+  position: relative;
+  background: black;
+  color: white;
+  padding: 40px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75);
+}
