@@ -1867,9 +1867,8 @@ form label {
   padding: 20px;
 }
 
-.guests-dropdown{
+select option {
   color: black;
   background-color: white;
   border: 1px solid black;
-  padding: 10px;
 }
