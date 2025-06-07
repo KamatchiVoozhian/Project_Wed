@@ -1866,3 +1866,10 @@ form label {
   margin-bottom: 50px;
   padding: 20px;
 }
+
+.guests-dropdown{
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+}
