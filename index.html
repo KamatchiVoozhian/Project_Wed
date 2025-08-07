@@ -46,6 +46,9 @@
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
+
+	<!-- Masonry.js CDN -->
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -345,79 +348,108 @@
 					</ul>		
 				</div>
 			</div>
-			<div class="container custom-container">
-				<div class="row">
-					<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-						<img src="images/1.jpg" alt="Our Photo 1" class="custom-image">
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-						<img src="images/2.jpg" alt="Our Photo 2" class="custom-image">
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-						<img src="images/3.jpg" alt="Our Photo 3" class="custom-image">
+			<div class="grid">
+				<div class="grid-sizer"></div>
+				<div class="grid-item">
+					<div class="photo-box landscape">
+						<img src="images/1.jpg" alt="landscape"/>
 					</div>
 				</div>
-				<div>
-					<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-						<img src="images/4.jpg" alt="Our Photo 4" class="custom-image">
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-						<img src="images/5.jpg" alt="Our Photo 5" class="custom-image">
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-						<img src="images/6.jpeg" alt="Our Photo 6" class="custom-image">
+				<div class="grid-item">
+					<div class="photo-box portrait">
+						<img src="images/6.jpeg" alt="portrait"/>
 					</div>
 				</div>
-				<div>
-					<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-						<img src="images/7.jpeg" alt="Our Photo 7" class="custom-image">
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-						<img src="images/8.jpeg" alt="Our Photo 8" class="custom-image">
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-						<img src="images/9.jpeg" alt="Our Photo 9" class="custom-image">
+				<div class="grid-item">
+					<div class="photo-box landscape">
+						<img src="images/7.jpeg" alt="landscape"/>
 					</div>
 				</div>
-				<div>
-					<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-						<img src="images/10.jpeg" alt="Our Photo 10" class="custom-image">
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-						<img src="images/11.jpeg" alt="Our Photo 11" class="custom-image">
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-						<img src="images/12.jpeg" alt="Our Photo 12" class="custom-image">
+				<div class="grid-item">
+					<div class="photo-box portrait">
+						<img src="images/8.jpeg" alt="portrait"/>
 					</div>
 				</div>
-				<div>
-					<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-						<img src="images/13.jpeg" alt="Our Photo 13" class="custom-image">
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-						<img src="images/14.jpeg" alt="Our Photo 14" class="custom-image">
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-						<img src="images/15.jpeg" alt="Our Photo 15" class="custom-image">
+				<div class="grid-item">
+					<div class="photo-box landscape">
+						<img src="images/2.jpg" alt="landscape"/>
 					</div>
 				</div>
-				<div>
-					<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-						<img src="images/16.jpeg" alt="Our Photo 16" class="custom-image">
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-						<img src="images/17.jpeg" alt="Our Photo 17" class="custom-image">
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-						<img src="images/18.jpeg" alt="Our Photo 18" class="custom-image">
+				<div class="grid-item">
+					<div class="photo-box portrait">
+						<img src="images/9.jpeg" alt="portrait"/>
 					</div>
 				</div>
-				<div>
-					<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-						<img src="images/19.jpeg" alt="Our Photo 19" class="custom-image">
+				<div class="grid-item">
+					<div class="photo-box portrait">
+						<img src="images/10.jpeg" alt="portrait"/>
 					</div>
-					<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-						<img src="images/20.jpeg" alt="Our Photo 20" class="custom-image">
+				</div>
+				<div class="grid-item">
+					<div class="photo-box portrait">
+						<img src="images/12.jpeg" alt="portrait"/>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="photo-box landscape">
+						<img src="images/3.jpg" alt="landscape"/>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="photo-box landscape">
+						<img src="images/4.jpg" alt="landscape"/>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="photo-box landscape">
+						<img src="images/5.jpg" alt="landscape"/>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="photo-box portrait">
+						<img src="images/13.jpeg" alt="portrait"/>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="photo-box landscape">
+						<img src="images/11.jpeg" alt="landscape"/>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="photo-box portrait">
+						<img src="images/14.jpeg" alt="portrait"/>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="photo-box landscape">
+						<img src="images/15.jpeg" alt="landscape"/>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="photo-box portrait">
+						<img src="images/16.jpeg" alt="portrait"/>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="photo-box portrait">
+						<img src="images/17.jpeg" alt="portrait"/>
+					</div>
+				</div>
+
+				<div class="grid-item">
+					<div class="photo-box portrait">
+						<img src="images/20.jpeg" alt="portrait"/>
+					</div>
+				</div>
+
+				<div class="grid-item">
+					<div class="photo-box landscape">
+						<img src="images/19.jpeg" alt="landscape"/>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="photo-box landscape">
+						<img src="images/18.jpeg" alt="landscape"/>
 					</div>
 				</div>
 			</div>
@@ -482,23 +514,33 @@
 	<script src="js/main.js"></script>
 
 	<script>
-    var d = new Date(new Date("2026-04-11T12:00:00"));
+		var d = new Date(new Date("2026-04-11T12:00:00"));
 
-    // default example
-    simplyCountdown('.simply-countdown-one', {
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate()
-    });
+		// default example
+		simplyCountdown('.simply-countdown-one', {
+			year: d.getFullYear(),
+			month: d.getMonth() + 1,
+			day: d.getDate()
+		});
 
-    //jQuery example
-    $('#simply-countdown-losange').simplyCountdown({
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate(),
-        enableUtc: false
-    });
-</script>
+		//jQuery example
+		$('#simply-countdown-losange').simplyCountdown({
+			year: d.getFullYear(),
+			month: d.getMonth() + 1,
+			day: d.getDate(),
+			enableUtc: false
+		});
+
+		// Initialize Masonry after the window fully loads
+		window.onload = function () {
+			new Masonry('.grid', {
+			itemSelector: '.grid-item',
+			columnWidth: '.grid-sizer',
+			gutter: 0,
+			percentPosition: true
+			});
+		};
+	</script>
 
 	</body>
 </html>
