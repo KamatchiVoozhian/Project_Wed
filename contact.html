@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Wedding - K&K</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FREEHTML5.CO" />
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+    <style>
+        .hotels-title {
+            font-size: rem;
+            font-size: 8rem;
+            color: #333;
+            margin-top: 50px;
+        }
+        .hotels-subtitle {
+            font-size: 2.8rem;
+            letter-spacing: -2px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        @media screen and (max-width: 768px) {
+            .hotels-title {
+                font-size: 6rem;
+            }
+            .hotels-subtitle {
+                font-size: 2rem;
+                text-align: justify;
+            }
+        }
+
+        .go-home-btn {
+            display: inline-flex;
+            align-items: center;
+            background: #8e44ad;
+            color: #fff;
+            font-size: 1.4rem;
+            font-family: 'Work Sans', sans-serif;
+            padding: 0.8em 2.2em;
+            border: none;
+            border-radius: 2em;
+            box-shadow: 0 6px 24px rgba(142,68,173,0.18), 0 1.5px 4px rgba(0,0,0,0.08);
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.2s, box-shadow 0.2s;
+            margin-top: 32px;
+            margin-bottom: 32px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        .go-home-btn:hover, .go-home-btn:focus {
+            background: #6c3483;
+            box-shadow: 0 8px 32px rgba(142,68,173,0.25), 0 2px 8px rgba(0,0,0,0.10);
+            text-decoration: none;
+            color: #fff;
+        }
+        .go-home-btn .arrow {
+            display: inline-block;
+            margin-right: 0.7em;
+            font-size: 1.5em;
+            transition: transform 0.3s cubic-bezier(.68,-0.55,.27,1.55);
+            animation: arrow-bounce 1s infinite alternate;
+        }
+        @keyframes arrow-bounce {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-8px); }
+        }
+        @media (max-width: 768px) {
+            .go-home-btn {
+                font-size: 1.1rem;
+                padding: 0.7em 1.5em;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            .go-home-btn .arrow {
+                font-size: 1.2em;
+            }
+        }
+        .custom-card {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(44, 62, 80, 0.08);
+            padding: 2.5rem 2rem 2rem 2rem;
+            margin-bottom: 2.5rem;
+            transition: box-shadow 0.2s;
+            text-align: center;
+        }
+        .custom-card:hover {
+            box-shadow: 0 8px 32px rgba(44, 62, 80, 0.15);
+        }
+        .card-heading {
+            font-size: 2.6rem;
+            font-weight: 700;
+            color: #512e5f;
+            margin-bottom: 1.2rem;
+            letter-spacing: -1px;
+        }
+        .card-image img {
+            width: 50%;
+            height: 50%;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 1.2rem;
+            box-shadow: 0 2px 12px rgba(44, 62, 80, 0.07);
+        }
+        .card-address {
+            font-size: 2rem;
+            color: #444;
+            margin-bottom: 1.2rem;
+            line-height: 1.6;
+            letter-spacing: 0.01em;
+        }
+        .card-button-book {
+            margin-top: 1.2rem;
+        }
+        .card-button-book a {
+            display: inline-block;
+            background: #8e44ad;
+            color: #fff;
+            font-size: 1.5rem;
+            padding: 0.6em 1.8em;
+            border: none;
+            border-radius: 2em;
+            box-shadow: 0 2px 8px rgba(142,68,173,0.12);
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.2s, box-shadow 0.2s;
+        }
+        .card-button-book a:hover, .card-button-book a:focus {
+            background: #6c3483;
+            box-shadow: 0 4px 16px rgba(142,68,173,0.18);
+            color: #fff;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            .custom-card {
+                padding: 1.2rem 0.8rem 1.2rem 0.8rem;
+            }
+            .card-heading {
+                font-size: 1.7rem;
+            }
+            .card-image img {
+                height: 160px;
+            }
+            .card-address {
+                font-size: 1.2rem;
+            }
+            .card-button-book a {
+                font-size: 1rem;
+                padding: 0.5em 1.2em;
+            }
+        }
+    </style>
+	<body>
+		
+	<div class="fh5co-loader"></div>
+	
+	<div id="page">
+	<nav class="fh5co-nav" role="navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-2">
+					<div id="fh5co-logo"><a href="index.html">Wedding</a></div>
+				</div>
+				<div class="col-xs-10 text-right menu-1">
+					<ul>
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="rsvp_engage.html">RSVP</a></li>
+						<li><a href="hotels.html">Accomodations</a></li>
+						<li><a href="index.html#fh5co-couple-story">Story</a></li>
+						<li><a href="index.html#fh5co-gallery">Gallery</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="registry.html">Registry</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</nav>
+
+	<header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(images/us.jpeg);">
+		<div class="overlay"></div>
+		<div class="fh5co-container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="display-t">
+						<div class="display-tc animate-box" data-animate-effect="fadeIn">
+							<h1>Contact</h1>
+                            <h2>Got questions? Need directions? Wondering if the cake will be chocolate (it will be)? Or maybe you just want to tell us how amazing we are? Either way, we’re all ears! </h2>
+                            <h2>If you need additional details about our wedding, travel, or events, please don’t hesitate to reach out.</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+    <div class="container custom-container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                <div class="custom-card">
+                    <div class="card-image">
+                        <img src="images/carlene.jpg" alt="Carlene Lagorio">
+                    </div>
+                    <div class="card-heading">
+                        <p>Carlene Lagorio</p>
+                    </div>
+                    <div class="card-address">
+                        <p><b>Email Address: </b>carlenelagorio@yahoo.com</p>
+                        <p><b>Phone Number: </b>(209) 471-2766</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
+                <div class="custom-card">
+                    <div class="card-image">
+                        <img src="images/varun_sv.png" alt="Carlene Lagorio">
+                    </div>
+                    <div class="card-heading">
+                        <p>Shrinidhi Vijay</p>
+                    </div>
+                    <div class="card-address">
+                        <p><b>Email Address: </b>shrinidhivijay@gmail.com</p>
+                        <p><b>Phone Number: </b>(917) 495-8615</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer id="fh5co-footer" role="contentinfo">
+		<div class="container">
+
+			<div class="row copyright">
+				<div class="col-md-12 text-center">
+					<p>
+						<small class="block">&copy; 2026 K&K Wedding | Designed with Love</small> 
+					</p>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+</div>
+
+<div class="gototop js-top">
+    <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+</div>
+
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+<!-- jQuery Easing -->
+<script src="js/jquery.easing.1.3.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Waypoints -->
+<script src="js/jquery.waypoints.min.js"></script>
+<!-- Carousel -->
+<script src="js/owl.carousel.min.js"></script>
+<!-- countTo -->
+<script src="js/jquery.countTo.js"></script>
+
+<!-- Stellar -->
+<script src="js/jquery.stellar.min.js"></script>
+<!-- Magnific Popup -->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/magnific-popup-options.js"></script>
+
+<!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
+<script src="js/simplyCountdown.js"></script>
+<!-- Main -->
+<script src="js/main.js"></script>
+</body>
+</html>

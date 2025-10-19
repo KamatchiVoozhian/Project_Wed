@@ -46,6 +46,9 @@
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
+
+	<!-- Masonry.js CDN -->
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -53,6 +56,10 @@
 
 	</head>
 	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+
 		.event-wrap {
 			position: relative;
 			margin: 10px 10px;
@@ -132,10 +139,11 @@
 				<div class="col-xs-10 text-right menu-1">
 					<ul>
 						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="rsvp_engage.html">RSVP</a></li>
 						<li><a href="hotels.html">Accomodations</a></li>
-						<li><a href="index.html">Story</a></li>
-						<li><a href="index.html">Gallery</a></li>
-						<li><a href="index.html">Contact</a></li>
+						<li><a href="index.html#fh5co-couple-story">Story</a></li>
+						<li><a href="index.html#fh5co-gallery">Gallery</a></li>
+						<li><a href="contact.html">Contact</a></li>
 						<li><a href="registry.html">Registry</a></li>
 					</ul>
 				</div>
@@ -152,13 +160,12 @@
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
 							<h1>Kaitlin &amp; Kamatchi</h1>
-							<h2>We Welcome you to celebrate the marriage with us!</h2>
-							<div class="d-flex align-items-center justify-content-center">
-								<a class="btn btn-primary btn-primary-outline-0 py-3 px-5" href="rsvp_engage.html" style="margin-bottom: 20px;">Marriage RSVP Now</a>
-							</div>
-							<h2>Stay tuned to the website for more updates and details.</h2>
+							<h2>We welcome you to celebrate the marriage with us!</h2>
+							
 							<div class="simply-countdown simply-countdown-one"></div>
-							<p><a href="hotels.html" class="btn btn-default btn-sm">Book Accomodations</a></p>
+							<div class="d-flex align-items-center justify-content-center">
+								<p><a href="hotels.html" class="btn btn-default btn-sm">Accomodations & Timeline</a></p><a class="btn btn-primary btn-primary-outline-0 py-3 px-5" href="rsvp_engage.html" style="margin-bottom: 20px;">RSVP here</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -215,15 +222,18 @@
 						<div class="col-md-10 col-md-offset-1">
 							<div class="col-md-6 col-sm-6 text-center">
 								<div class="event-wrap mehandhi animate-box">
-									<h3>Mehendi</h3>
+									<h3>Haldi and Mehendi</h3>
 									<div class="event-col">
 										<i class="icon-clock"></i>
-										<span>12:00 PM</span>
-										<span>3:00 PM</span>
+										<span>11:00 AM</span>
+										<span>7:00 PM</span>
 									</div>
 									<div class="event-col">
 										<i class="icon-calendar"></i>
 										<span>April 09, 2026</span>
+										<br>
+										<br>
+										<span>Linden, CA</span>
 									</div>
 								</div>
 							</div>
@@ -232,12 +242,13 @@
 									<h3>Tying the Knot</h3>
 									<div class="event-col">
 										<i class="icon-clock"></i>
-										<span>1:00 PM</span>
-										<span>2:00 PM</span>
+										<span>12:30 PM</span>
+										<span>2:30 PM</span>
 									</div>
 									<div class="event-col">
 										<i class="icon-calendar"></i>
 										<span>April 11, 2026</span>
+										<span>24590 Main St, Foresthill, CA 95631, United States</span>
 									</div>
 								</div>
 							</div>
@@ -246,12 +257,13 @@
 									<h3>Exchanging the Rings</h3>
 									<div class="event-col">
 										<i class="icon-clock"></i>
-										<span>4:00 PM</span>
 										<span>5:00 PM</span>
+										<span>6:00 PM</span>
 									</div>
 									<div class="event-col">
 										<i class="icon-calendar"></i>
 										<span>April 11, 2026</span>
+										<span>24590 Main St, Foresthill, CA 95631, United States</span>
 									</div>
 								</div>
 							</div>
@@ -260,12 +272,13 @@
 									<h3>Party Time</h3>
 									<div class="event-col">
 										<i class="icon-clock"></i>
-										<span>5:00 PM</span>
-										<span>6:00 AM</span>
+										<span>6:00 PM</span>
+										<span>Onwards</span>
 									</div>
 									<div class="event-col">
 										<i class="icon-calendar"></i>
 										<span>April 11, 2026</span>
+										<span>24590 Main St, Foresthill, CA 95631, United States</span>
 									</div>
 								</div>
 							</div>
@@ -278,7 +291,7 @@
 	
 	<div id="fh5co-couple-story">
 		<div class="container">
-			<div class="row" style="margin-top: 100px;">
+			<div class="row" style="margin-top: 250px;">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 					<span>We Love Each Other</span>
 					<h2>Our Story</h2>
@@ -296,7 +309,7 @@
 									<span class="date">June 26th, 2023</span>
 								</div>
 								<div class="timeline-body">
-									<p></p>
+									<p>Our journey started online. Kaitlin was in Santa Cruz, enjoying a little vacation, and Kamatchi was in Sunnyvale, trying to figure out where Chico even was! That first conversation was full of curiosity, laughter, and an undeniable spark. From questions about hometowns to shared stories, we quickly realized there was something special between us.</p>
 								</div>
 							</div>
 						</li>
@@ -304,11 +317,11 @@
 							<div class="timeline-badge" style="background-image:url(images/couple-2.jpg);"></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">First Date</h3>
-									<span class="date">July 4th, 2023</span>
+									<h3 class="timeline-title">Our First Date <br>Van Gogh Immersive Experience</h3>
+									<span class="date">September 4th, 2023</span>
 								</div>
 								<div class="timeline-body">
-									<p></p>
+									<p>One of our most unforgettable experiences together was exploring the Van Gogh Immersive Exhibit. Walking through the swirling, colorful worlds of his masterpieces felt magical—just like our journey. It was a reminder that love, like art, is full of color, wonder, and moments that take your breath away.</p>
 								</div>
 							</div>
 						</li>
@@ -320,13 +333,76 @@
 									<span class="date">August 20, 2023</span>
 								</div>
 								<div class="timeline-body">
-									<p></p>
+									<p>By late summer, it was clear our connection was real. We officially became a couple, and the months that followed were filled with adventures and explorations. Together, we traveled near and far—wandering the streets of LA, discovering the vibrant vibes of Seattle, enjoying the charm of Boston and New York, and soaking in the natural beauty of Oregon. Every trip brought new experiences, shared laughs, and memories that made our bond even stronger.</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-inverted animate-box">
+							<div class="timeline-badge" style="background-image:url(images/couple-2.jpg);"></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Moving in together</h3>
+									<span class="date">September 2024</span>
+								</div>
+								<div class="timeline-body">
+									<p>A year later, we took another big step—creating a home together. Living under one roof has made every day brighter, full of laughter, warmth, and tiny memories that remind us we’re meant to be.</p>
+								</div>
+							</div>
+						</li>
+						<li class="animate-box">
+							<div class="timeline-badge" style="background-image:url(images/couple-3.jpg);"></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Making it International <br>Finland, Amsterdam and Tallinn</h3>
+									<span class="date">October 7th, 2024</span>
+								</div>
+								<div class="timeline-body">
+									<p>In October, we took our first official international trip together, exploring Finland, Amsterdam, and Tallinn. From scenic streets and cozy cafés to breathtaking landscapes, every moment was unforgettable. A highlight of the trip was revisiting the Van Gogh Museum—seeing his timeless masterpieces again felt even more special when shared together.</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-inverted animate-box">
+							<div class="timeline-badge" style="background-image:url(images/couple-2.jpg);"></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Engaged</h3>
+									<span class="date">December 2024</span>
+								</div>
+								<div class="timeline-body">
+									<p>We took the next big step in our journey and got engaged! It was a magical moment filled with love, excitement, and the joyful realization that we’d be spending the rest of our lives together.</p>
+								</div>
+							</div>
+						</li>
+						<li class="animate-box">
+							<div class="timeline-badge" style="background-image:url(images/couple-3.jpg);"></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Engagement Party</h3>
+									<span class="date">April 5th 2025</span>
+								</div>
+								<div class="timeline-body">
+									<p>We celebrated our love with family and friends at our engagement party in April. Surrounded by laughter, cheers, and happy tears, it was a perfect prelude to our wedding day and a reminder of how lucky we are to have such wonderful people in our lives.</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-inverted animate-box">
+							<div class="timeline-badge" style="background-image:url(images/couple-2.jpg);"></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Our Furry Family Members</h3>
+									<span class="date">April 28th, 2025</span>
+								</div>
+								<div class="timeline-body">
+									<p>Katie’s birthday brought the sweetest surprise when we welcomed a puppy, Mucca, into our family! Our little bundle of energy has filled our home with love, laughter, and endless wagging tails. Of course, he wasn’t starting from scratch—our cat, Yeti, quickly claimed the role of “older sibling.”
+
+									Like any siblings, Yeti and Mucca have their fair share of playful squabbles and dramatic standoffs, but when the day winds down, they’re the best of friends. Together, they’ve made our home warmer, our lives fuller, and our journey even more special.</p>
 								</div>
 							</div>
 						</li>
 			    	</ul>
 				</div>
 			</div>
+			<p style="text-align: center; font-size: 2rem;">Now, after surviving long-distance drives, international trips, and sibling squabbles between Yeti and Mucca, we figure marriage will be a piece of cake. Speaking of cake… <b>we’ll see you on our wedding day!</b></p>
 		</div>
 	</div>
 
@@ -343,6 +419,111 @@
 				<div class="col-md-12">
 					<ul id="fh5co-gallery-list">
 					</ul>		
+				</div>
+			</div>
+			<div class="grid">
+				<div class="grid-sizer"></div>
+				<div class="grid-item">
+					<div class="photo-box landscape">
+						<img src="images/1.jpg" alt="landscape"/>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="photo-box portrait">
+						<img src="images/6.jpeg" alt="portrait"/>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="photo-box landscape">
+						<img src="images/7.jpeg" alt="landscape"/>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="photo-box portrait">
+						<img src="images/8.jpeg" alt="portrait"/>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="photo-box landscape">
+						<img src="images/2.jpg" alt="landscape"/>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="photo-box portrait">
+						<img src="images/9.jpeg" alt="portrait"/>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="photo-box portrait">
+						<img src="images/10.jpeg" alt="portrait"/>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="photo-box portrait">
+						<img src="images/12.jpeg" alt="portrait"/>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="photo-box landscape">
+						<img src="images/3.jpg" alt="landscape"/>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="photo-box landscape">
+						<img src="images/4.jpg" alt="landscape"/>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="photo-box landscape">
+						<img src="images/5.jpg" alt="landscape"/>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="photo-box portrait">
+						<img src="images/13.jpeg" alt="portrait"/>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="photo-box landscape">
+						<img src="images/11.jpeg" alt="landscape"/>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="photo-box portrait">
+						<img src="images/14.jpeg" alt="portrait"/>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="photo-box landscape">
+						<img src="images/15.jpeg" alt="landscape"/>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="photo-box portrait">
+						<img src="images/16.jpeg" alt="portrait"/>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="photo-box portrait">
+						<img src="images/17.jpeg" alt="portrait"/>
+					</div>
+				</div>
+
+				<div class="grid-item">
+					<div class="photo-box portrait">
+						<img src="images/20.jpeg" alt="portrait"/>
+					</div>
+				</div>
+
+				<div class="grid-item">
+					<div class="photo-box landscape">
+						<img src="images/19.jpeg" alt="landscape"/>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="photo-box landscape">
+						<img src="images/18.jpeg" alt="landscape"/>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -406,23 +587,49 @@
 	<script src="js/main.js"></script>
 
 	<script>
-    var d = new Date(new Date("2026-04-11T12:00:00"));
+		var d = new Date(new Date("2026-04-11T12:00:00"));
 
-    // default example
-    simplyCountdown('.simply-countdown-one', {
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate()
-    });
+		// default example
+		simplyCountdown('.simply-countdown-one', {
+			year: d.getFullYear(),
+			month: d.getMonth() + 1,
+			day: d.getDate()
+		});
 
-    //jQuery example
-    $('#simply-countdown-losange').simplyCountdown({
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate(),
-        enableUtc: false
-    });
-</script>
+		//jQuery example
+		$('#simply-countdown-losange').simplyCountdown({
+			year: d.getFullYear(),
+			month: d.getMonth() + 1,
+			day: d.getDate(),
+			enableUtc: false
+		});
+
+		// Initialize Masonry after the window fully loads
+		window.onload = function () {
+			new Masonry('.grid', {
+			itemSelector: '.grid-item',
+			columnWidth: '.grid-sizer',
+			gutter: 0,
+			percentPosition: true
+			});
+		};
+
+		window.addEventListener('load', function() {
+		// Check if URL has a hash (#rsvp)
+		if (window.location.hash) {
+			const target = document.querySelector(window.location.hash);
+			if (target) {
+			// Jump to top instantly first
+			window.scrollTo(0, 0);
+
+			// Then smooth scroll to the element
+			setTimeout(() => {
+				target.scrollIntoView({ behavior: 'smooth' });
+			}, 200); // wait a bit for images/layout to load
+			}
+		}
+		});
+	</script>
 
 	</body>
 </html>
