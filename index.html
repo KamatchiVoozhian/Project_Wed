@@ -56,6 +56,10 @@
 
 	</head>
 	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+
 		.event-wrap {
 			position: relative;
 			margin: 10px 10px;
@@ -137,8 +141,8 @@
 						<li class="active"><a href="index.html">Home</a></li>
 						<li><a href="rsvp_engage.html">RSVP</a></li>
 						<li><a href="hotels.html">Accomodations</a></li>
-						<li><a href="index.html">Story</a></li>
-						<li><a href="index.html">Gallery</a></li>
+						<li><a href="index.html#fh5co-couple-story">Story</a></li>
+						<li><a href="index.html#fh5co-gallery">Gallery</a></li>
 						<li><a href="contact.html">Contact</a></li>
 						<li><a href="registry.html">Registry</a></li>
 					</ul>
@@ -157,12 +161,11 @@
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
 							<h1>Kaitlin &amp; Kamatchi</h1>
 							<h2>We welcome you to celebrate the marriage with us!</h2>
-							<div class="d-flex align-items-center justify-content-center">
-								<a class="btn btn-primary btn-primary-outline-0 py-3 px-5" href="rsvp_engage.html" style="margin-bottom: 20px;">RSVP here</a>
-							</div>
-							<h2>Stay tuned to the website for more updates and details.</h2>
+							
 							<div class="simply-countdown simply-countdown-one"></div>
-							<p><a href="hotels.html" class="btn btn-default btn-sm">Book Accomodations</a></p>
+							<div class="d-flex align-items-center justify-content-center">
+								<p><a href="hotels.html" class="btn btn-default btn-sm">Accomodations & Timeline</a></p><a class="btn btn-primary btn-primary-outline-0 py-3 px-5" href="rsvp_engage.html" style="margin-bottom: 20px;">RSVP here</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -610,6 +613,22 @@
 			percentPosition: true
 			});
 		};
+
+		window.addEventListener('load', function() {
+		// Check if URL has a hash (#rsvp)
+		if (window.location.hash) {
+			const target = document.querySelector(window.location.hash);
+			if (target) {
+			// Jump to top instantly first
+			window.scrollTo(0, 0);
+
+			// Then smooth scroll to the element
+			setTimeout(() => {
+				target.scrollIntoView({ behavior: 'smooth' });
+			}, 200); // wait a bit for images/layout to load
+			}
+		}
+		});
 	</script>
 
 	</body>
