@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -51,7 +52,7 @@
 	<![endif]-->
 
 	</head>
-    <style>
+	<style>
         .hotels-title {
             font-size: rem;
             font-size: 8rem;
@@ -134,7 +135,7 @@
             box-shadow: 0 8px 32px rgba(44, 62, 80, 0.15);
         }
         .card-heading {
-            font-size: 2.6rem;
+            font-size: 2rem;
             font-weight: 700;
             color: #512e5f;
             margin-bottom: 1.2rem;
@@ -152,8 +153,9 @@
             font-size: 2rem;
             color: #444;
             margin-bottom: 1.2rem;
-            line-height: 1.6;
+            line-height: 0.5;
             letter-spacing: 0.01em;
+			margin-top: 1.2rem;
         }
         .card-button-book {
             margin-top: 1.2rem;
@@ -195,6 +197,55 @@
                 padding: 0.5em 1.2em;
             }
         }
+
+		/* Timeline Container */
+		.timeline {
+			margin: 20px auto;
+			padding: 20px;
+		}
+
+		/* Outer Layer with the timeline border */
+		.outer {
+		border-left: 2px solid #333;
+		}
+
+		/* Card container */
+		.card {
+		position: relative;
+		margin: 0 0 20px 20px;
+		padding: 10px;
+		background: black;
+		color: white;
+		border-radius: 8px;
+		max-width: 400px;
+        box-shadow: 0 4px 24px rgba(44, 62, 80, 0.08);
+		}
+
+		/* Information about the timeline */
+		.info {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		}
+
+		/* Title of the card */
+		.title {
+		color: white;
+		position: relative;
+		font-weight: bold;
+		}
+
+		/* Timeline dot  */
+		.title::before {
+		content: "";
+		position: absolute;
+		width: 10px;
+		height: 10px;
+		background: white;
+		border-radius: 999px;
+		left: -36px;
+		border: 3px solid #9305f2;
+		}
     </style>
 	<body>
 		
@@ -224,60 +275,168 @@
 		</div>
 	</nav>
 
-	<header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(images/us.jpeg);">
+    <header id="fh5co-header" class="fh5co-cover fh5co-cover-sm" role="banner" style="background-image:url(images/us.jpeg);">
 		<div class="overlay"></div>
 		<div class="fh5co-container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1>Hotels</h1>
-                            <h2><b>We can't wait to celebrate this special day with you!</b></h2>
-                            <h2>To make your visit as comfortable as possible, we’ve reserved rooms at nearby hotels. We recommend booking early, these rooms won’t last long, and we’d love for everyone to stay close and keep the good times going all weekend!</h2>
-
+							<h1>Shuttle Info</h1>
+                            <h2>Shuttle service will be provided from each hotel to the wedding venue. Please note that due to multiple ceremonies and the distance to the venue, shuttle departure times will vary. Kindly review the schedule below and plan accordingly.</h2>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</header>
-
-    <div class="container custom-container">
+	</header> 
+	
+	<div class="container custom-container">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
                 <div class="custom-card">
                     <div class="card-heading">
-                        <p>Miners camp</p>
+                        <p>For guests attending the Indian cultural ceremony only</p>
                     </div>
                     <div class="card-image">
-                        <img src="images/miners_camp_1.jpg" alt="Miners Camp">
+                        <img src="temple.jpg" alt="Indian Temple">
                     </div>
                     <div class="card-address">
-                        <p><b>Address: </b>24381 Foresthill Rd, Foresthill, CA 95631</p>
-                    </div>
-                    <div class="card-button-book">
-                        <a href="https://hotels.cloudbeds.com/reservation/g5NluW?allotment_block_code=b571794#checkin=2026-04-11&checkout=2026-04-12" target="_blank">Book Now</a>
+                        <p><b>Pickup from Spring Hill Suites: </b>11.40 AM</p>
+                        <p><b>Pickup from Miner's Camp </b>12.05 PM</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-xs-12 col-sm-12">
                 <div class="custom-card">
                     <div class="card-heading">
-                        <p>Hotel Sierra Vista, Springhill Suites</p>
+                        <p>For guests attending the American ceremony only</p>
                     </div>
                     <div class="card-image">
-                        <img src="images/hotel_sierra_vista.png" alt="Miners Camp">
+                        <img src="rings.jpg" alt="American Wedding Rings">
                     </div>
                     <div class="card-address">
-                        <p><b>Address: </b>13535 Bowman Rd, Auburn, CA 95603</p>
-                    </div>
-                    <div class="card-button-book">
-                        <a href="https://app.marriott.com/reslink?id=1746727361893&key=GRP&app=resvlink" target="_blank">Book Now</a>
+                        <p><b>Pickup from Spring Hill Suites: </b>4:00 PM</p>
+                        <p><b>Pickup from Miner's Camp </b>4:40 PM</p>
                     </div>
                 </div>
             </div>
         </div>
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+				<div class="custom-card">
+					<div style="text-align: center; color: black; font-size: 2rem;">
+						<p>PLEASE ARRIVE AT THE HOTEL PICKUP LOCATION <b>AT LEAST 10 MINS PRIOR</b> TO DEPARTURE</p>
+					</div>
+				</div>
+			</div>
+        </div>
     </div>
+	<div class="fh5co-container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2 text-center">
+				<div class="display-t">
+					<div class="display-tc animate-box" data-animate-effect="fadeIn">
+						<h1>Shuttle Info</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container" style="justify-content: center; display: flex;">
+		<div class="timeline">
+			<div class="outer">
+				<div class="card">
+				<div class="info">
+					<h3 class="title">11.40 AM</h3>
+					<p>Shuttle pickup for Indian Ceremony at Spring Hill Suites</p>
+				</div>
+				</div>
+				<div class="card">
+				<div class="info">
+					<h3 class="title">12:05 PM</h3>
+					<p>Shuttle pickup for Indian Ceremony at Miner's Camp</p>
+				</div>
+				</div>
+				<div class="card">
+				<div class="info">
+					<h3 class="title">12:30 PM</h3>
+					<p>Indian Ceremony</p>
+				</div>
+				</div>
+				<div class="card">
+				<div class="info">
+					<h3 class="title">2:25 PM</h3>
+					<p>A short break to relax at Forest House Lodge</p>
+				</div>
+				</div>
+				<div class="card">
+				<div class="info">
+					<h3 class="title">4:00 PM</h3>
+					<p>Shuttle pickup for American Ceremony at Spring Hill Suites</p>
+				</div>
+				</div>
+				<div class="card">
+				<div class="info">
+					<h3 class="title">4:15 PM</h3>
+					<p>Shuttle departs from Forest House Lodge to the American Ceremony</p>
+				</div>
+				</div>
+				<div class="card">
+				<div class="info">
+					<h3 class="title">4:40 PM</h3>
+					<p>Shuttle pickup for American Ceremony from Miner's Camp</p>
+				</div>
+				</div>
+				<div class="card">
+				<div class="info">
+					<h3 class="title">5:00 PM</h3>
+					<p>American Ceremony</p>
+				</div>
+				</div>
+				<div class="card">
+				<div class="info">
+					<h3 class="title">5:45 PM</h3>
+					<p>Cocktails and Appetizers</p>
+				</div>
+				</div>
+
+				<div class="card">
+				<div class="info">
+					<h3 class="title">7:30 PM</h3>
+					<p>Dinner Service</p>
+				</div>
+				</div>
+
+				<div class="card">
+				<div class="info">
+					<h3 class="title">8:15 PM</h3>
+					<p>Toasts, cake cutting and Special dances</p>
+				</div>
+				</div>
+
+				<div class="card">
+				<div class="info">
+					<h3 class="title">8:45 PM</h3>
+					<p>PARTTAAAYY!!</p>
+				</div>
+				</div>
+
+				<div class="card">
+				<div class="info">
+					<h3 class="title">5:45 PM</h3>
+					<p>Shuttle service available back to Miner's Camp and Spring Hill Suites</p>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+    </div>
+    </div>
+</div>
+<!-- RSVP Form End -->
+
 
 <footer id="fh5co-footer" role="contentinfo">
 		<div class="container">
@@ -321,5 +480,46 @@
 <script src="js/simplyCountdown.js"></script>
 <!-- Main -->
 <script src="js/main.js"></script>
+
+<script>
+var d = new Date(new Date().getTime() + 1070 * 120 * 120 * 2000);
+
+// default example
+simplyCountdown('.simply-countdown-one', {
+    year: d.getFullYear(),
+    month: d.getMonth() + 1,
+    day: d.getDate()
+});
+
+//jQuery example
+$('#simply-countdown-losange').simplyCountdown({
+    year: d.getFullYear(),
+    month: d.getMonth() + 1,
+    day: d.getDate(),
+    enableUtc: false
+});
+</script>
+
+<script>
+    const form = document.getElementById("google-form");
+    const googleAppScriptUrl = "https://script.google.com/macros/s/AKfycbyuC9oIo6lLwjC5IEHP3ocKdyjF-eguYjKj7QPbP1I3ow3bnZbbSf8elY_q0k9UepgBCw/exec"
+        form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        try {
+            fetch(googleAppScriptUrl,{
+                method: "post",
+                mode: "no-cors",
+                body: new FormData(form),
+            }).then(() => {
+                form.reset();
+                console.log("success");
+                alert("Successfully Submitted");
+            });
+        } catch (errror) {
+            alert("something is wrong not submitted");
+            console.log(error);
+        }
+    })
+</script>
 </body>
 </html>
